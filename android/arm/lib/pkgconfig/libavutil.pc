@@ -1,0 +1,14 @@
+prefix=/f/video_wrkst/ffmpeg-commands-executor-library-master/source/ffmpeg_neo/android/arm
+exec_prefix=${prefix}
+libdir=/f/video_wrkst/ffmpeg-commands-executor-library-master/source/ffmpeg_neo/android/arm/lib
+includedir=/f/video_wrkst/ffmpeg-commands-executor-library-master/source/ffmpeg_neo/android/arm/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.67.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}
