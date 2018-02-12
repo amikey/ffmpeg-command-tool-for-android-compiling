@@ -35,3 +35,21 @@ modify ffmpeg.c && ffmpeg.h
 done!  
   
 2018.2.11  
+
+Compile log 3   
+=============  
+now using build_android.sh to build commandline tools.  
+the built file /bin/ffmpeg(17mb) is executable on the termux,  
+proving its ability to run on the android.   
+however,it seem's to be a 32-bit one.  
+performance test:  
+testing……  
+test file:a0.mp4(1.0mb)  
+test command:ffmpeg -i a0.mp4 a.mp4  
+test result(time consumed):  
+i.compiled ffmpeg: 1min and 2 secs  
+ii.termux's pkg ffmpeg: 22 secs  
+iii.on the pc:15 secs  
+……
+
+2018.2.12
