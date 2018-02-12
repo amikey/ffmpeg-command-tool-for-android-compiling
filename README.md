@@ -49,7 +49,15 @@ test command:ffmpeg -i a0.mp4 a.mp4
 test result(time consumed):  
 i.compiled ffmpeg: 1min and 2 secs  
 ii.termux's pkg ffmpeg: 22 secs  
-iii.on the pc:15 secs  
+iii.on the pc:15 secs   
 ……
 
-2018.2.12
+2018.2.12  
+
+
+Compile log 3   
+=============  
+according to http://www.ffmpeg-archive.org/Using-latest-NDK-and-ffmpeg-version-results-in-very-slow-video-processing-on-android-td4674382.html
+remove --disable-asm and rebuild libx264  
+test result(time consumed):  22 secs
+done!
