@@ -5,7 +5,7 @@ export TMPDIR="F:/video_wrkst/ffmpeg-commands-executor-library-master/source/ffm
 NDK=F:/COD/NVPACK/android-ndk-r12b
 #F:/COD/NVPACK/android-ndk-r12b/platforms/android-23/  
 # 编译针对的平台，这里选择最低支持android-14, arm架构，生成的so库是放在libs/armeabi文件夹下的，若针对x86架构，要选择arch-x86
-PLATFORM=$NDK/platforms/android-23/arch-arm64
+PLATFORM=$NDK/platforms/android-23/arch-arm
 
 # 工具链的路径，arm-linux-androideabi-4.9与上面设置的PLATFORM对应，4.9为工具的版本号
 TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64
@@ -38,7 +38,7 @@ EXTRA_LDFLAGS="-LF:/video_wrkst/libx264/x264"
 	--extra-ldflags="-L../x264 -Wl,-z,relro -Wl,-z,now -pie" \
     --extra-cflags="-I$PLATFORM/usr/include -I../x264 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-strict-overflow -fstack-protector-all" \
     --target-os=linux \
-    --arch=arm64 \
+    --arch=arm \
 	--enable-gpl \
 	--enable-libx264 \
 	--enable-encoder=libx264 \
