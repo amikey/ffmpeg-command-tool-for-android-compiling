@@ -57,7 +57,7 @@ iii.on the pc:15 secs  
 
 Compile log 3   
 =============  
-according to http://www.ffmpeg-archive.org/Using-latest-NDK-and-ffmpeg-version-results-in-very-slow-video-processing-on-android-td4674382.html
-remove --disable-asm and rebuild libx264  
-test result(time consumed):  22 secs
-done!
+according to http://www.ffmpeg-archive.org/Using-latest-NDK-and-ffmpeg-version-results-in-very-slow-video-processing-on-android-td4674382.html  
+remove --disable-asm and rebuild libx264    
+test result(time consumed):  22 secs  
+done!  
