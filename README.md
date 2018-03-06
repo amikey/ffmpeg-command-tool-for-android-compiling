@@ -76,7 +76,7 @@ Compile log 5
 ./Configure \
     --sysroot=$SYSROOT \
     --cross-compile-prefix=$TOOLCHAIN/bin/arm-linux-androideabi- \
-    --prefix=$PWD/dist no-idea no-mdc2 no-rc5 static android \
+    --prefix=$PWD/dist no-idea no-mdc2 no-rc5 shared android \
     
 make depend && make
 
