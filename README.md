@@ -63,3 +63,30 @@ test result(time consumed):  22 secs
 done!  
 
 2018.2.12  
+
+
+Compile log 5   
+=============  
+1.compile openssl for https protocol
+1.1 get perl-for-mingw from:https://jaist.dl.sourceforge.net/project/perl-mingw/5.24.0/perl-5.24.0-mingw32.zip
+    unzip,move file to mingw folder.
+1.2 compile openssl using again msys:
+
+
+./Configure \
+    --sysroot=$SYSROOT \
+    --cross-compile-prefix=$TOOLCHAIN/bin/arm-linux-androideabi- \
+    --prefix=$PWD/dist no-idea no-mdc2 no-rc5 static android \
+    
+make depend && make
+
+1.3 delete .so to link to static libs
+2 compile ffmpeg.
+
+2018.3.6
+
+
+
+
+
+
